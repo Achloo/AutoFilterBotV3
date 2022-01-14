@@ -45,7 +45,7 @@ class Database:
     async def remove_ban(self, id):
         ban_status = dict(
             is_banned=False,
-            ban_duration=0,
+            ban_duration=24,
             banned_on=datetime.date.max.isoformat(),
             ban_reason="",
         )
